@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.socket.io/socket.io-3.0.0.js"></script>
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+    <ul class="generalChat">
+        
+    </ul>
+
+    <input class="generalMessage" placeholder="message">
+    <button class="generalBtn">Send</button>
+
+    <div class="room">
+        <ul data-roomName="RoomA" class="roomChat">
+
+        </ul>
+        <input class="roomMessage" type="text" placeholder="room message">
+        <button data-roomNameBtn="RoomA" class="roomSendBtn">Send to room</button>
+        <!-- <button class="joinRoomBtn">Join Room</button> -->
+    </div>
+    
+</body>
+</html>

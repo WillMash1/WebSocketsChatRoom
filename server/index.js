@@ -16,7 +16,7 @@ io.on('connection', (socket) => {
             socket.join(data.roomName);
             io.to(data.roomName).emit('message', {message: `${socket.id.substr(0,2)} said ${data.message}`, roomName: data.roomName});
         } else {
-            io.emit('message', {message: `${socket.id.substr(0,2)} said ${data.message}`, roomName: null});
+            io.emit('message', {message: `${socket.id.substr(0,2)} said ${data}`, roomName: null});
         }
     })
 
